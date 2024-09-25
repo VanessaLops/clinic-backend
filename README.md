@@ -45,6 +45,9 @@ Certifique-se de ter o Node.js instalado em sua máquina. Depois, no diretório 
     "email": "usuario@example.com",
     "password": "sua_senha"
 }
+```
+
+## Login de usuário
 
 ## Endpoint
 
@@ -59,3 +62,4 @@ Certifique-se de ter o Node.js instalado em sua máquina. Depois, no diretório 
     "email": "usuario@example.com",
     "password": "sua_senha"
 }
+```
