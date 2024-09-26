@@ -14,3 +14,20 @@ export const findUserByEmail = (email: string) => {
   console.log(email);
   return prisma.user.findUnique({ where: { email } });
 };
+
+
+
+export const updateUserPassword = async (
+  userId: number,
+  hashedPassword: string
+) => {
+  return await prisma.user.update({
+    where: { id: userId },
+    data: { password: hashedPassword },
+  });
+};
+
+export const getAllUsers = async () => {
+  const users = await prisma.user.findMany(); 
+  return users;
+};
